@@ -14,18 +14,39 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: golden
+}
+
+
+h1 {
+  margin-bottom: 0.2em;
+  font-weight: 600;
+}
+
 .wrapper {
-  margin-top: 12em;
+  margin-top: 1em;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  min-height: 100vh;
 }
 
-h1 {
-  margin-bottom: 0.2em;
-  font-weight: 600;
+
+.logos img {
+  transition: .3s
+}
+
+
+.logos img:hover {
+  width: 100px
 }
 
 p {
@@ -37,13 +58,20 @@ p {
 img {
   margin: 1em;
   border-radius: 100%;
-  padding: 3px;
-  border: 1px solid black;
 }
+
 button {
-  padding: 1em 2em 1em 2em;
+  padding: 1em 10em 1em 10em;
+  background-color:#102E4A;
+  color: white;
+  border-radius: 2em;
+  transition: .5s
+}
+
+button:hover {
+  padding: 1em 10em 1em 10em;
   border: 0;
-  background-color: rgb(31, 31, 207);
+  background-color: #547FA7;
   color: white;
   border-radius: 2em;
 }
