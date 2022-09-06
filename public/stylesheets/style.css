@@ -30,7 +30,7 @@ h1 {
 }
 
 .wrapper {
-  margin-top: 1em;
+  margin-top: 5em;
   flex-direction: column;
   display: flex;
   justify-content: center;
