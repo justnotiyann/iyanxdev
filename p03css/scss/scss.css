@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2 {
+  margin: 1em 2em;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 0.6em;
+  overflow: hidden;
+}
+
+table thead tr th {
+  padding: 1em 4em;
+  background-color: #5c945c;
+  margin-right: 10em;
+}
+
+table tbody tr td {
+  padding: 1em 4em;
+  background-color: #c7a4aa;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+table tbody tr td:hover {
+  color: white;
+  background-color: #cc6f7f;
+}
+
+table tbody tr td a {
+  text-decoration: none;
+  padding: 8px;
+}
+
+table tbody tr td a button {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  padding: 1em 2em;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+table tbody tr td a button#edit, table tbody tr td a button#hapus {
+  background-color: yellowgreen;
+  color: white;
+  font-weight: bold;
+}
+
+table tbody tr td a button#edit:hover, table tbody tr td a button#hapus:hover {
+  background-color: #78a029;
+}
+
+table tbody tr td a button#hapus {
+  background-color: red;
+}
+
+table tbody tr td a button#hapus:hover {
+  background-color: #9b3333;
+}
