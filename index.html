@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tugas Muhammad Fitrian Shousyade Almadina</title>
-    <link rel="stylesheet" href="public/stylesheets/style.css" />
-  </head>
-  <body>
-  <div class="main">
-    <div class="wrapper">
-      <h1>Hello Semua 👋</h1>
-      <p>Nama saya Muhammad Fitrian Shousyade Almadina, NIM saya 41215308</p>
-      <img src="./public//images/crop.jpg" alt="Muhammad Fitrian Shousyade Almadina" />
-      <br />
-      <!-- <button id="alert">Klik saya</button> -->
-      <div class="logos">
-        <p>Follow my sosial media 🙌</p>
-        <a target="_blank" href="https://github.com/justnotiyann">
-          <img src="./public/images/github.svg" width="60em" alt="Media Sosial Github bang iyann">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas Muhammad Fitrian Shousyade Almadina</title>
+  <link rel="stylesheet" href="public/stylesheets/custom.css">
+  <link rel="stylesheet" href="public/stylesheets/style.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav>
+    <ul>
+      <li>
+        <a href="">
+          <i class="bi bi-lightning-charge"></i>
         </a>
-        <a target="_blank" href="https://linkedin.com/in/muhammad-fitrian-735b71220/">
-          <img src="./public/images/linkedin.svg" width="60em" alt="Media Sosial Linkedin bang iyann">
-        </a>
-        <a target="_blank" href="https://instagram.com/just_iyann/">
-          <img src="./public/images/instagram.svg" width="60em" alt="Media Sosial instagram bang iyann">
-        </a>
-      </div>
-      <button type="button" id="alert" name="button">Click Me Brotaaa</button>
+      </li>
+      <li><a target="_blank" href="index.html">Home</a></li>
+      <li><a target="_blank" href="./p03/index.html">Tugas P03</a></li>
+      <li><a target="_blank" href="./p03css/index.html">Tugas P03 CSS</a></li>
+      <li><a target="_blank" href="https://github.com/justnotiyann?tab=repositories">My Projects</a></li>
+    </ul>
+  </nav>
+  <!-- end -->
+
+  <div class="wrapper">
+    <h1>Hello Semua 👋</h1>
+    <p>Nama saya Muhammad Fitrian Shousyade Almadina, NIM saya 41215308</p>
+    <a href="https://instagram.com/just_iyann/" target="_blank">
+      <img id="poto" src="./public//images/crop.jpg" alt="Muhammad Fitrian Shousyade Almadina" />
+
+    </a>
+    <br />
+    <!-- <button id="alert">Klik saya</button> -->
+    <div class="logos">
+      <p>Follow my sosial media 🙌</p>
+      <a target="_blank" href="https://github.com/justnotiyann">
+        <img src="./public/images/github.svg" width="60em" alt="Media Sosial Github bang iyann">
+      </a>
+      <a target="_blank" href="https://linkedin.com/in/muhammad-fitrian-735b71220/">
+        <img src="./public/images/linkedin.svg" width="60em" alt="Media Sosial Linkedin bang iyann">
+      </a>
+      <a target="_blank" href="https://instagram.com/just_iyann/">
+        <img src="./public/images/instagram.svg" width="60em" alt="Media Sosial Linkedin bang iyann">
+      </a>
     </div>
+    <button type="button" id="alert" name="button">Click Me Brotaaa</button>
   </div>
 
-    <script>
-      let nama = "MUHAMMAD FITRIAN SHOUSYADE ALMADINA";
-      let nim = 41215308;
-      const button = document.querySelector("#alert");
-      button.addEventListener("click", () => {
-        alert(`Halo javascript saya ${nama} nim ${nim} sedang belajar membuat web !`);
-      });
-    </script>
-  </body>
+  <script src="public/javascript/script.js"></script>
+</body>
+
 </html>

@@ -29,13 +29,20 @@ h1 {
 }
 
 .wrapper {
-  margin-top: 1em;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  min-height: 100vh;
+}
+
+.wrapper img#poto {
+  padding: 10px;
+  transition: 1s;
+}
+
+.wrapper img#poto:hover {
+  box-shadow: 10px 10px rgb(35, 104, 165);
 }
 
 .logos img {
@@ -43,13 +50,13 @@ h1 {
 }
 
 .logos img:hover {
-  width: 100px;
+  width: 70px;
 }
 
 p {
   margin-bottom: 0.2em;
   text-align: center;
-  color: rgb(97, 96, 96);
+  color: rgb(117, 117, 117);
 }
 
 img {
