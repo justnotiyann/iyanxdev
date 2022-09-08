@@ -64,7 +64,7 @@ img {
   border-radius: 100%;
 }
 
-button {
+button#alert {
   padding: 1em 10em 1em 10em;
   background-color: #102e4a;
   color: white;
@@ -72,7 +72,7 @@ button {
   transition: 0.5s;
 }
 
-button:hover {
+button#alert:hover {
   padding: 1em 10em 1em 10em;
   border: 0;
   background-color: #547fa7;
