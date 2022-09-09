@@ -1,0 +1,56 @@
+.main {
+  font-weight: 600;
+}
+.main table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.main table thead {
+  background-color: #3737ac;
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out;
+}
+.main table thead:hover {
+  background-color: #2b2b85;
+}
+.main table thead tr th {
+  padding: 1.2rem 8rem;
+}
+.main table tbody tr {
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+.main table tbody tr td {
+  padding: 1.2rem 8rem;
+  background-color: rgb(233, 233, 233);
+  transition: all 0.2s ease-in-out;
+}
+.main table tbody tr td:hover:nth-child(1) {
+  background-color: #b6b6b6;
+  cursor: pointer;
+}
+.main table tbody tr td:hover:nth-child(2) {
+  background-color: #b6b6b6;
+  cursor: pointer;
+}
+.main table tbody tr td a {
+  padding: 0.5rem 1.2rem;
+  color: white;
+  border-radius: 10px;
+}
+.main table tbody tr td a.edit {
+  background-color: rgb(164, 164, 32);
+  transition: all 0.2s ease-in-out;
+  margin-right: 1rem;
+}
+.main table tbody tr td a.edit:hover {
+  background-color: #4f4f0f;
+}
+.main table tbody tr td a.hapus {
+  background-color: rgb(159, 32, 32);
+  transition: all 0.2s ease-in-out;
+}
+.main table tbody tr td a.hapus:hover {
+  background-color: #4a0f0f;
+}

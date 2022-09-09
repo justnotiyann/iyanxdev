@@ -1,0 +1,71 @@
+$padding-table: 1.2rem 8rem;
+$yellow: rgb(164, 164, 32);
+$red: rgb(159, 32, 32);
+$primary-color: #3737ac;
+$bg-color: rgb(233, 233, 233);
+
+@mixin transision {
+  transition: all 0.2s ease-in-out;
+}
+
+.main {
+  font-weight: 600;
+  table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    thead {
+      background-color: $primary-color;
+      color: rgb(255, 255, 255);
+      @include transision;
+      &:hover {
+        background-color: darken($primary-color, 10);
+      }
+
+      tr {
+        th {
+          padding: $padding-table;
+        }
+      }
+    }
+    tbody {
+      tr {
+        margin-bottom: 10px;
+        border: 1px solid black;
+        td {
+          padding: $padding-table;
+          background-color: $bg-color;
+          @include transision;
+          &:hover:nth-child(1) {
+            background-color: darken($bg-color, 20);
+            cursor: pointer;
+          }
+          &:hover:nth-child(2) {
+            background-color: darken($bg-color, 20);
+            cursor: pointer;
+          }
+          a {
+            padding: 0.5rem 1.2rem;
+            color: white;
+            border-radius: 10px;
+            &.edit {
+              background-color: $yellow;
+              @include transision;
+              margin-right: 1rem;
+              &:hover {
+                background-color: darken($yellow, 20);
+              }
+            }
+            &.hapus {
+              background-color: $red;
+              @include transision;
+              &:hover {
+                background-color: darken($red, 20);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
