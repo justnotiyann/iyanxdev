@@ -1,0 +1,33 @@
+@import "./variabels";
+@import "./fonts";
+@import "./flex";
+
+nav {
+  margin: 2rem auto;
+  ul {
+    @include flex;
+    list-style-type: none;
+    li {
+      margin-right: 1rem;
+      font-weight: map-get($font-weight, regular);
+      @include transision-ease;
+      &:hover {
+        color: lighten($primary-color, 10);
+      }
+      i {
+        font-size: 2rem;
+        @include transision-ease;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@mixin navMobile {
+  nav {
+    font-size: 0.9rem;
+    margin: 1.2rem auto;
+  }
+}

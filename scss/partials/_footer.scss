@@ -1,0 +1,34 @@
+@import "./variabels";
+@import "./flex";
+
+footer {
+  text-align: center;
+  .icons {
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    i {
+      font-size: 3em;
+      margin-right: 1rem;
+      @include transision-ease;
+      &:hover {
+        color: $primary-color;
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@mixin footerMobile {
+  footer {
+    font-size: 0.9rem;
+    .icons {
+      @include flex;
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+}

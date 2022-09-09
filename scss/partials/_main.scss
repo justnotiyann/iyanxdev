@@ -1,0 +1,67 @@
+@import "../partials/flex";
+
+.main {
+  height: 70vh;
+  overflow: hidden;
+  @include flex;
+  .images {
+    margin-left: 2rem;
+    @include flex;
+    img {
+      @include transision-ease;
+      border-radius: 50%;
+    }
+    img:hover {
+      box-shadow: 10px 10px $primary-color;
+    }
+  }
+  .cta {
+    p {
+      color: grey;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: white;
+      font-weight: map-get($font-weight, semibold);
+      background-color: $primary-color;
+      border-radius: 0.6rem;
+      padding: 0.5rem;
+      @include transision-ease;
+      &:hover {
+        background-color: darken($primary-color, 10);
+      }
+    }
+  }
+}
+
+@mixin mainMobile {
+  .main {
+    flex-wrap: wrap;
+    padding: 1rem;
+    .cta {
+      order: 2;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .images {
+      @include flex;
+      margin: 0;
+      order: 1;
+      img {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@mixin mainLarge {
+  .main {
+    .cta {
+      text-align: start;
+      order: 1;
+    }
+    .images {
+      order: 2;
+    }
+  }
+}

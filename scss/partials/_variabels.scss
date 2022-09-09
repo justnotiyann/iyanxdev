@@ -1,0 +1,6 @@
+$primary-color: #3737ac;
+$secondary-color: #c4a77d;
+
+@mixin transision-ease {
+  transition: all 0.2s ease-in-out;
+}

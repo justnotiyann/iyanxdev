@@ -1,0 +1,11 @@
+@import "./fonts";
+
+body {
+  font-family: $primary-fonts;
+  height: 90vh;
+}
+
+@mixin bodyMobile {
+  font-family: $primary-fonts;
+  height: 100vh;
+}

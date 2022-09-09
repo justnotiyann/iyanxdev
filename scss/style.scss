@@ -1,0 +1,17 @@
+@import "./partials/reset";
+@import "./partials/body";
+@import "./partials/nav";
+@import "./partials/main";
+@import "./partials/footer";
+// Breakpoints
+@media only screen and (min-width: 370px) {
+  @include navMobile;
+  @include mainMobile;
+  @include footerMobile;
+}
+@media only screen and (min-width: 760px) {
+  @include mainLarge;
+}
+
+@media only screen and (min-width: 992px) {
+}
