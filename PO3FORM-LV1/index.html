@@ -21,167 +21,171 @@
     Tidak perlu memakai CSS!
     Tidak perlu memakai JS!
  -->
-    <h1>Form Pendaftaran Mahasiswa</h1>
-    <form action="">
-        <fieldset>
-            <!-- Nomor -->
-            <label>Nomor Pendaftaran :</label>
-            <input type="text">
-            <br>
-            <br>
-            <!-- Nama -->
-            <label>Masukkan Nama Lengkap :</label>
-            <input type="text">
-            <!-- Tanggal -->
-            <br>
-            <br>
-            <label>Tanggal Ujian :</label>
-            <input type="date">
-            <!-- Jenis Kelamin -->
-            <br>
-            <p>Jenis Kelamin</p>
-              <input type="radio" id="Laki-laki" name="jenis_kelamin" value="Laki-laki">
-              <label for="Laki-laki">Laki-laki</label><br>
-              <input type="radio" id="Perempuan" name="jenis_kelamin" value="Perempuan">
-              <label for="Perempuan">Perempuan</label><br>
-            <!-- Jurusan -->
-            <p>Jurusan yang dipilih</p>
+    <div class="wrapper">
+        <img src="kop.png" alt="">
+
+        <h1>Form Pendaftaran Mahasiswa</h1>
+        <form action="">
             <fieldset>
-                <legend>Reguler</legend>
-
-                  <input type="radio" id="ti" name="fav_language" value="ti">
-                  <label for="ti">Teknik Informatika</label><br>
-                  <input type="radio" id="ka" name="fav_language" value="ka">
-                  <label for="ka">Komputerisasi Akuntansi</label><br>
-                  <input type="radio" id="rpl" name="fav_language" value="rpl">
-                  <label for="rpl">Rekayasa Perangkat Lunak</label>
+                <!-- Nomor -->
+                <label>Nomor Pendaftaran :</label>
+                <input type="text">
                 <br>
-                  <input type="radio" id="mi" name="fav_language" value="mi">
-                  <label for="mi">Manajemen Informasi</label>
+                <br>
+                <!-- Nama -->
+                <label>Masukkan Nama Lengkap :</label>
+                <input type="text">
+                <!-- Tanggal -->
+                <br>
+                <br>
+                <label>Tanggal Ujian :</label>
+                <input type="date">
+                <!-- Jenis Kelamin -->
+                <br>
+                <p>Jenis Kelamin</p>
+                  <input type="radio" id="Laki-laki" name="jenis_kelamin" value="Laki-laki">
+                  <label for="Laki-laki">Laki-laki</label><br>
+                  <input type="radio" id="Perempuan" name="jenis_kelamin" value="Perempuan">
+                  <label for="Perempuan">Perempuan</label><br>
+                <!-- Jurusan -->
+                <p>Jurusan yang dipilih</p>
+                <fieldset>
+                    <legend>Reguler</legend>
+
+                      <input type="radio" id="ti" name="fav_language" value="ti">
+                      <label for="ti">Teknik Informatika</label><br>
+                      <input type="radio" id="ka" name="fav_language" value="ka">
+                      <label for="ka">Komputerisasi Akuntansi</label><br>
+                      <input type="radio" id="rpl" name="fav_language" value="rpl">
+                      <label for="rpl">Rekayasa Perangkat Lunak</label>
+                    <br>
+                      <input type="radio" id="mi" name="fav_language" value="mi">
+                      <label for="mi">Manajemen Informasi</label>
 
 
+                </fieldset>
+                <fieldset>
+                    <legend>Karyawan</legend>
+
+                      <input type="radio" id="ti_sore" name="fav_language" value="ti_sore">
+                      <label for="ti_sore">Teknik Informatika</label><br>
+                      <input type="radio" id="ka_sore" name="fav_language" value="ka_sore">
+                      <label for="ka_sore">Komputerisasi Akuntansi</label><br>
+                      <input type="radio" id="rpl_sore" name="fav_language" value="rpl_sore">
+                      <label for="rpl_sore">Rekayasa Perangkat Lunak</label>
+                    <br>
+                      <input type="radio" id="mi_sore" name="fav_language" value="mi_sore">
+                      <label for="mi_sore">Manajemen Informasi</label>
+
+
+                </fieldset>
+                <!-- waktu kuliah -->
+                <p>Waktu Kuliah</p>
+                  <input type="radio" id="pagi" name="fav_language" value="pagi">
+                  <label for="pagi">Pagi</label><br>
+                  <input type="radio" id="sore" name="fav_language" value="sore">
+                  <label for="sore">Sore</label><br>
+                  <input type="radio" id="malam" name="fav_language" value="malam">
+                  <label for="malam">Malam</label>
+                <!-- ukuran jas -->
+                <p>Ukuran Jas Kampus</p>
+                  <input type="radio" id="small" name="fav_language" value="small">
+                  <label for="small">Small</label><br>
+                  <input type="radio" id="medium" name="fav_language" value="medium">
+                  <label for="medium">Medium</label><br>
+                  <input type="radio" id="large" name="fav_language" value="large">
+                  <label for="large">Large</label>
+                <br>
+                  <input type="radio" id="extra_large" name="fav_language" value="extra_large">
+                  <label for="extra_large">Extra Lager</label>
+                <br><br>
+                <!-- Sistem Pembayaran -->
+                <label for="pembayaran">Masukkan Sistem Pembayaran :</label>
+                <select name="pembayaran" id="pembayaran">
+                    <option value="angsuran">Angsuran</option>
+                    <option value="tunai">Tunai</option>
+                </select>
+
+                <!-- Data Pribadi -->
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Data Pribadi</legend>
+                    <label for="Agama">Agama</label>
+                    <input type="text" name="agama">
+                    <br>
+                    <br>
+                    <label for="tempat_lahir">Tempat Lahir :</label>
+                    <input type="text" name="tempat_lahir">
+                    <br>
+                    <br>
+                    <label for="tanggal_lahir">Tanggal Lahir :</label>
+                    <input type="date" name="tanggal_lahir">
+                    <br>
+                    <br>
+                    <p for="alamat">Alamat Tempat Tinggal : </p>
+                    <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+                    <br>
+                    <br>
+                    <label>RT/RW</label>
+                    <input type="text" name="rt_rw" id="rt_rw">
+                    <br>
+                    <br>
+                    <label for="kode_pos">Kode Pos</label>
+                    <input type="text" name="kode_pos" id="kode_pos">
+                    <br><br>
+                    <label for="nomor">Nomor Telepon Rumah/HP :</label>
+                    <input type="tel" name="nomor" id="nomor" maxlength="14" minlength="9">
+                    <br><br>
+                    <p>Kewarganegaraan</p>
+                      <input type="radio" id="wni" name="fav_language" value="wni">
+                      <label for="wni">WNI</label><br>
+                      <input type="radio" id="wna" name="fav_language" value="wna">
+                      <label for="wna">WNA</label><br>
+                    <br><br>
+                    <label for="nama_ortu">Nama Orang Tua</label>
+                    <input type="text" name="nama_ortu" id="nama_ortu">
+                    <p>Pekerjaan</p>
+                      <input type="radio" id="pns_tni_polri" name="fav_language" value="pns_tni_polri">
+                      <label for="pns_tni_polri">PNS/TNI/POLRI</label><br>
+                      <input type="radio" id="swasta" name="fav_language" value="swasta">
+                      <label for="swasta">SWASTA</label><br>
+                      <input type="radio" id="wirausaha" name="fav_language" value="wirausaha">
+                      <label for="wirausaha">WIRAUSAHA</label><br>
+                </fieldset>
+
+                <!-- Pendidikan Terakhir -->
+                <fieldset>
+                    <legend>Pendidikan Terakhir</legend>
+                    <br>
+                    <label for="asal_sma">Asal SMA/SMK/Perguruan Tinggi</label>
+                    <input type="text" name="asal_sma" id="asal_sma">
+                    <p>Status Sekolah/Perguruan Tinggi</p>
+                      <input type="radio" id="negeri" name="fav_language" value="negeri">
+                      <label for="negeri">NEGERI</label><br>
+                      <input type="radio" id="swasta_sekolah" name="fav_language" value="swasta_sekolah">
+                      <label for="swasta_sekolah">SWASTA</label><br>
+                      <input type="radio" id="luar_negeri" name="fav_language" value="luar_negeri">
+                      <label for="luar_negeri">LUAR NEGERI</label><br>
+                    <br><br>
+                    <label for="jurusan_sekolah">Jurusan :</label>
+                    <input type="text" name="jurusan_sekolah" id="jurusan_sekolah">
+                    <br><br>
+                    <label for="nomor_ijazah">Masukkan Nomor Ijazah</label>
+                    <input type="text" name="nomor_ijazah" id="nomor_ijazah">
+                    <br><br>
+                    <label for="tanggal_lulus">Tanggal lulus</label>
+                    <input type="date" name="tanggal_lulus" id="tanggal_lulus">
+                    <br><br>
+                    <label for="nilai_akhir">Nilai NEM / IPK</label>
+                    <input type="text" name="nilai_akhir" id="nilai_akhir">
+                </fieldset>
+                <p>Cirebon, 12 September 2022</p>
+                <br><br><br><br>
+                <p><u>NAMA MAHASISWA</u></p>
             </fieldset>
-            <fieldset>
-                <legend>Karyawan</legend>
-
-                  <input type="radio" id="ti_sore" name="fav_language" value="ti_sore">
-                  <label for="ti_sore">Teknik Informatika</label><br>
-                  <input type="radio" id="ka_sore" name="fav_language" value="ka_sore">
-                  <label for="ka_sore">Komputerisasi Akuntansi</label><br>
-                  <input type="radio" id="rpl_sore" name="fav_language" value="rpl_sore">
-                  <label for="rpl_sore">Rekayasa Perangkat Lunak</label>
-                <br>
-                  <input type="radio" id="mi_sore" name="fav_language" value="mi_sore">
-                  <label for="mi_sore">Manajemen Informasi</label>
-
-
-            </fieldset>
-            <!-- waktu kuliah -->
-            <p>Waktu Kuliah</p>
-              <input type="radio" id="pagi" name="fav_language" value="pagi">
-              <label for="pagi">Pagi</label><br>
-              <input type="radio" id="sore" name="fav_language" value="sore">
-              <label for="sore">Sore</label><br>
-              <input type="radio" id="malam" name="fav_language" value="malam">
-              <label for="malam">Malam</label>
-            <!-- ukuran jas -->
-            <p>Ukuran Jas Kampus</p>
-              <input type="radio" id="small" name="fav_language" value="small">
-              <label for="small">Small</label><br>
-              <input type="radio" id="medium" name="fav_language" value="medium">
-              <label for="medium">Medium</label><br>
-              <input type="radio" id="large" name="fav_language" value="large">
-              <label for="large">Large</label>
-            <br>
-              <input type="radio" id="extra_large" name="fav_language" value="extra_large">
-              <label for="extra_large">Extra Lager</label>
-            <br><br>
-            <!-- Sistem Pembayaran -->
-            <label for="pembayaran">Masukkan Sistem Pembayaran :</label>
-            <select name="pembayaran" id="pembayaran">
-                <option value="angsuran">Angsuran</option>
-                <option value="tunai">Tunai</option>
-            </select>
-
-            <!-- Data Pribadi -->
-            <br>
-            <br>
-            <fieldset>
-                <legend>Data Pribadi</legend>
-                <label for="Agama">Agama</label>
-                <input type="text" name="agama">
-                <br>
-                <br>
-                <label for="tempat_lahir">Tempat Lahir :</label>
-                <input type="text" name="tempat_lahir">
-                <br>
-                <br>
-                <label for="tanggal_lahir">Tanggal Lahir :</label>
-                <input type="date" name="tanggal_lahir">
-                <br>
-                <br>
-                <p for="alamat">Alamat Tempat Tinggal : </p>
-                <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
-                <br>
-                <br>
-                <label>RT/RW</label>
-                <input type="text" name="rt_rw" id="rt_rw">
-                <br>
-                <br>
-                <label for="kode_pos">Kode Pos</label>
-                <input type="text" name="kode_pos" id="kode_pos">
-                <br><br>
-                <label for="nomor">Nomor Telepon Rumah/HP :</label>
-                <input type="tel" name="nomor" id="nomor" maxlength="14" minlength="9">
-                <br><br>
-                <p>Kewarganegaraan</p>
-                  <input type="radio" id="wni" name="fav_language" value="wni">
-                  <label for="wni">WNI</label><br>
-                  <input type="radio" id="wna" name="fav_language" value="wna">
-                  <label for="wna">WNA</label><br>
-                <br><br>
-                <label for="nama_ortu">Nama Orang Tua</label>
-                <input type="text" name="nama_ortu" id="nama_ortu">
-                <p>Pekerjaan</p>
-                  <input type="radio" id="pns_tni_polri" name="fav_language" value="pns_tni_polri">
-                  <label for="pns_tni_polri">PNS/TNI/POLRI</label><br>
-                  <input type="radio" id="swasta" name="fav_language" value="swasta">
-                  <label for="swasta">SWASTA</label><br>
-                  <input type="radio" id="wirausaha" name="fav_language" value="wirausaha">
-                  <label for="wirausaha">WIRAUSAHA</label><br>
-            </fieldset>
-
-            <!-- Pendidikan Terakhir -->
-            <fieldset>
-                <legend>Pendidikan Terakhir</legend>
-                <br>
-                <label for="asal_sma">Asal SMA/SMK/Perguruan Tinggi</label>
-                <input type="text" name="asal_sma" id="asal_sma">
-                <p>Status Sekolah/Perguruan Tinggi</p>
-                  <input type="radio" id="negeri" name="fav_language" value="negeri">
-                  <label for="negeri">NEGERI</label><br>
-                  <input type="radio" id="swasta_sekolah" name="fav_language" value="swasta_sekolah">
-                  <label for="swasta_sekolah">SWASTA</label><br>
-                  <input type="radio" id="luar_negeri" name="fav_language" value="luar_negeri">
-                  <label for="luar_negeri">LUAR NEGERI</label><br>
-                <br><br>
-                <label for="jurusan_sekolah">Jurusan :</label>
-                <input type="text" name="jurusan_sekolah" id="jurusan_sekolah">
-                <br><br>
-                <label for="nomor_ijazah">Masukkan Nomor Ijazah</label>
-                <input type="text" name="nomor_ijazah" id="nomor_ijazah">
-                <br><br>
-                <label for="tanggal_lulus">Tanggal lulus</label>
-                <input type="date" name="tanggal_lulus" id="tanggal_lulus">
-                <br><br>
-                <label for="nilai_akhir">Nilai NEM / IPK</label>
-                <input type="text" name="nilai_akhir" id="nilai_akhir">
-            </fieldset>
-            <p>Cirebon, 12 September 2022</p>
-            <br><br><br><br>
-            <p><u>NAMA MAHASISWA</u></p>
-        </fieldset>
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>
