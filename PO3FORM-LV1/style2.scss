@@ -16,6 +16,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  img {
+    max-width: 300px;
+  }
 }
 
 .title {
@@ -43,5 +46,16 @@ body {
   }
   &__form2 {
     @extend .wrapper__form1;
+  }
+}
+
+table {
+  tr {
+    th {
+      padding: 1rem 2rem;
+    }
+    td {
+      padding: 1rem 2rem;
+    }
   }
 }

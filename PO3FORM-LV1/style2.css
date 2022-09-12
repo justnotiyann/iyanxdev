@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,18 +11,19 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.images, .title {
+.images,
+.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -40,19 +41,46 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 2rem auto;
 }
 
-.wrapper__form1, .wrapper__form2 {
+.wrapper__form1,
+.wrapper__form2 {
   margin-right: 2rem;
 }
 
-.wrapper__form1 form fieldset, .wrapper__form2 form fieldset {
+.wrapper__form1 form fieldset,
+.wrapper__form2 form fieldset {
   border-radius: 0.2em;
   padding: 1rem 2rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 4px;
 }
