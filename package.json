@@ -1,0 +1,23 @@
+{
+  "name": "iyanxdev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justnotiyann/iyanxdev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justnotiyann/iyanxdev/issues"
+  },
+  "homepage": "https://github.com/justnotiyann/iyanxdev#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
